@@ -13,7 +13,7 @@ h1 {
   padding-right: 0.5%;
 }
 
-h2 {
+h3 {
   color: #fbf1c7;
   padding-left: 0.5%;
   padding-right: 0.5%;
@@ -46,17 +46,16 @@ a {
   border-radius: 5px;
 }
 
-.box-l {
-  float: left;
-  width: 45%;
-}
-
-.box-r {
-  float: right;
-  width: 45%;
-}
-
+.box-l,
+.box-r,
 .box-c {
+  float: left;
+  width: 96%; /* 45% width + 1% padding */
+}
+
+.box-l,
+.box-r,
+.box-c, {
   float: left;
   width: 96%; /* 45% width + 1% padding */
 }
@@ -69,15 +68,6 @@ a {
   background-color: #3c3836;
   border-radius: 5px;
   padding: 1%;
-
-  transition: all 0.3s ease-in-out;
-}
-
-.box-l:hover,
-.box-r:hover,
-.box-c:hover,
-.page-box:hover {
-  transform: scale(1.03);
 }
 
 .face {
@@ -85,8 +75,4 @@ a {
   border-radius: 50%;
   width: 20%;
   float: right;
-}
-
-.face:hover {
-  border-radius: 25%;
 }
