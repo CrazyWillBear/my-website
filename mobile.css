@@ -29,6 +29,13 @@ a {
   color: #458588;
 }
 
+button {
+  border-radius: 5px;
+  border-color: #3c3836;
+  background: none;
+  color: #ebdbb2;
+}
+
 .page-box {
   float: right;
   display: inline-block;
@@ -56,13 +63,6 @@ a {
 
 .box-l,
 .box-r,
-.box-c, {
-  float: left;
-  width: 96%; /* 45% width + 1% padding */
-}
-
-.box-l,
-.box-r,
 .box-c,
 .page-box {
   margin: 1%;
@@ -76,4 +76,12 @@ a {
   border-radius: 50%;
   width: 20%;
   float: right;
+}
+
+.json-var {
+  color: #fabd2f;
+}
+
+.json-def {
+  color: #b8bb26;
 }

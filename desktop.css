@@ -29,6 +29,19 @@ a {
   color: #458588;
 }
 
+pre {
+  overflow: auto;
+}
+
+input {
+  border-radius: 5px;
+  border-color: #3c3836;
+  background: none;
+  color: #ebdbb2;
+
+  transition: all 0.3s ease-in-out;
+}
+
 .page-box {
   float: right;
   display: inline-block;
@@ -74,6 +87,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+button:hover,
 .box-l:hover,
 .box-r:hover,
 .box-c:hover,
@@ -90,4 +104,12 @@ a {
 
 .face:hover {
   border-radius: 25%;
+}
+
+.json-var {
+  color: #fabd2f;
+}
+
+.json-def {
+  color: #b8bb26;
 }
