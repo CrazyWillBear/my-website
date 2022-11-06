@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+  padding: 1%;
+  background-color: #282828;
+
+  font-family: "JetBrains Mono", monospace;
+  color: #ebdbb2;
+}
+
+h1 {
+  color: #fbf1c7;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+h2 {
+  color: #fbf1c7;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+p {
+  color: #ebdbb2;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+a {
+  color: #458588;
+}
+
+.page-box {
+  float: right;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.page-text {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.code-box {
+  margin: 1%;
+  background-color: #504945;
+  border-radius: 5px;
+}
+
+.box-l {
+  float: left;
+  width: 45%;
+}
+
+.box-r {
+  float: right;
+  width: 45%;
+}
+
+.box-c {
+  float: left;
+  width: 96%; /* 45% width + 1% padding */
+}
+
+.box-l,
+.box-r,
+.box-c,
+.page-box {
+  margin: 1%;
+  background-color: #3c3836;
+  border-radius: 5px;
+  padding: 1%;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.box-l:hover,
+.box-r:hover,
+.box-c:hover,
+.page-box:hover {
+  transform: scale(1.03);
+}
+
+.face {
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  width: 20%;
+  float: right;
+}
+
+.face:hover {
+  border-radius: 25%;
+}
