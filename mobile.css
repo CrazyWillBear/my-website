@@ -1,56 +1,80 @@
-html:root {
+/* General Settings */
+:root {
   color-scheme: dark;
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   padding: 1%;
   background-color: #282828;
-
   font-family: "JetBrains Mono", monospace;
   color: #ebdbb2;
 }
 
-h1 {
+/* Headings */
+h1, h3 {
   color: #fbf1c7;
   padding-left: 0.5%;
   padding-right: 0.5%;
 }
 
-h3 {
-  color: #fbf1c7;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-}
-
+/* Paragraphs */
 p {
   color: #ebdbb2;
   padding-left: 0.5%;
   padding-right: 0.5%;
 }
 
+/* Links */
 a {
   color: #458588;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-button {
+/* Preformatted Text */
+pre {
+  overflow: auto;
+  font-family: "JetBrains Mono", monospace;
+  background-color: #3c3836;
+  padding: 1%;
   border-radius: 5px;
-  border-color: #3c3836;
+}
+
+/* Input Fields */
+input {
+  border-radius: 5px;
+  border: 1px solid #3c3836;
   background: none;
   color: #ebdbb2;
+  padding: 0.5em;
+  transition: all 0.3s ease-in-out;
+}
+input:focus {
+  outline: none;
+  border-color: #458588;
 }
 
+/* Page Box */
 .page-box {
   float: right;
   display: inline-block;
   white-space: nowrap;
+  background-color: #3c3836;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 1%;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Page Text */
 .page-text {
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin: 0;
 }
 
+/* Code Box */
 .code-box {
   margin: 1%;
   background-color: #504945;
@@ -58,30 +82,54 @@ button {
   padding: 1%;
 }
 
-.box-l,
-.box-r,
-.box-c {
-  float: left;
-  width: 96%; /* 45% width + 1% padding */
+/* Box Layout */
+.box-c, .box-r, .box-l {
+  clear: both;
+  margin: 1% auto; /* Center horizontally */
 }
 
-.box-l,
-.box-r,
-.box-c,
-.page-box {
+/* Shared Box Styles */
+.box-l, .box-r, .box-c, .page-box {
+  overflow: hidden;
   margin: 1%;
   background-color: #3c3836;
   border-radius: 5px;
   padding: 1%;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Article Box */
+.article-box {
+  font-family: "Merriweather", serif;
+  line-height: 1.5; /* Adjust the value as needed */
+  
+  width: 96%;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #3c3836;
+  border-radius: 5px;
+  clear: both;
+}
+
+.article-date-inline {
+  font-size: 0.8rem; /* Smaller font size */
+  color: #888888; /* Subtle color */
+  margin-left: 1rem;
+  vertical-align: baseline; /* Aligns date with the text baseline */
+}
+
+/* Face Image */
 .face {
   transition: all 0.5s ease-in-out;
   border-radius: 50%;
   width: 20%;
   float: right;
 }
+.face:hover {
+  border-radius: 25%;
+}
 
+/* JSON Highlighting */
 .json-var {
   color: #d65d0e;
 }
